@@ -46,4 +46,28 @@ public class LogIn extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder ealert = new AlertDialog.Builder(LogIn.this);
+        ealert.setTitle("Exit Application");
+        ealert.setMessage("Are you sure want to close the application?");
+        ealert.setCancelable(true);
+        ealert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+
+        ealert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+
+        AlertDialog alertDialog = ealert.create();
+        alertDialog.show();
+    }
 }
