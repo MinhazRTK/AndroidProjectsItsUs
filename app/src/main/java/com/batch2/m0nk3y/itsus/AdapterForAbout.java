@@ -42,7 +42,7 @@ public class AdapterForAbout extends RecyclerView.Adapter<AdapterForAbout.ViewHo
         final AboutUs AboutUs = memberList.get(position);
 
         holder.textViewName.setText(AboutUs.getName());
-        holder.textViewId.setText(AboutUs.getUrl());
+        //holder.textViewId.setText(AboutUs.getUrl());
 
         holder.imageView.setImageDrawable(mCtx.getResources().getDrawable(AboutUs.getImage()));
 
@@ -52,7 +52,7 @@ public class AdapterForAbout extends RecyclerView.Adapter<AdapterForAbout.ViewHo
                 //Toast.makeText(mCtx, AboutUs.getUrl(), Toast.LENGTH_SHORT).show();
                 Search src = new Search();
                 Bundle arguments = new Bundle();
-                arguments.putString( "url" , AboutUs.getUrl());
+                arguments.putString("url", AboutUs.getUrl());
                 src.setArguments(arguments);
 
                 ((FragmentActivity) mCtx).getFragmentManager().beginTransaction()
@@ -78,7 +78,7 @@ public class AdapterForAbout extends RecyclerView.Adapter<AdapterForAbout.ViewHo
         public ViewHolder(View itemView) {
             super(itemView);
             textViewName = itemView.findViewById(R.id.textViewName);
-            textViewId = itemView.findViewById(R.id.textViewId);
+            //textViewId = itemView.findViewById(R.id.textViewId);
             imageView = itemView.findViewById(R.id.imageView);
         }
 

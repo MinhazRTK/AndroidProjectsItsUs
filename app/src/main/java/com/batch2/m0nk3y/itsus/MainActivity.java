@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     Search fragSearch = new Search();
                     ft = getFragmentManager().beginTransaction();
-                    ft.replace(R.id.frame,fragSearch);
+                    ft.replace(R.id.frame, fragSearch);
                     ft.commit();
 
                     //mTextMessage.setText(R.string.title_home);
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_dashboard:
                     BookmarkFragment fragBookmark = new BookmarkFragment();
                     ft = getFragmentManager().beginTransaction();
-                    ft.replace(R.id.frame,fragBookmark);
+                    ft.replace(R.id.frame, fragBookmark);
                     ft.commit();
 
                     return true;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     //mTextMessage.setText(R.string.title_notifications);
                     AboutFragment fragAbout = new AboutFragment();
                     ft = getFragmentManager().beginTransaction();
-                    ft.replace(R.id.frame,fragAbout);
+                    ft.replace(R.id.frame, fragAbout);
                     ft.commit();
                     return true;
             }
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         Search fragSearch = new Search();
         ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.frame,fragSearch);
+        ft.replace(R.id.frame, fragSearch);
         ft.commit();
 
         navigation.getMenu().getItem(0).setChecked(true);

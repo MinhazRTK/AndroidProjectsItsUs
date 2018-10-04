@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C8E6C9"
     android:gravity="center_vertical|center"
     android:orientation="vertical"
-    android:background="#C8E6C9"
     tools:context=".MainActivity">
 
     <ImageView
@@ -39,9 +39,9 @@
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:background="@drawable/btn_rounded"
         android:layout_margin="15dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Login"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="357dp" />
 

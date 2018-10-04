@@ -62,7 +62,7 @@ public class BookmarkFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v =  inflater.inflate(R.layout.fragment_bookmark, container, false);
+        View v = inflater.inflate(R.layout.fragment_bookmark, container, false);
         recyclerView = v.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -71,57 +71,56 @@ public class BookmarkFragment extends Fragment {
 
         siteList.add(new AboutUs(
                 1,
-                "Minhaz Rahman",
-                "https://facebook.com/llxx.lord.xxll",
-                R.drawable.minhaz));
+                "Google",
+                "https://google.com",
+                R.drawable.google_logo));
 
         siteList.add(new AboutUs(
                 1,
-                "Fahmi Farzana",
-                "20161012010",
-                R.drawable.fahmi));
+                "Gmail",
+                "https://gmail.com",
+                R.drawable.gmail_logo));
 
         siteList.add(new AboutUs(
                 1,
-                "Mahbuba Ani",
-                "20161012010",
-                R.drawable.oni));
+                "Yahoo!",
+                "https://yahoo.com",
+                R.drawable.yahoo_logo));
         siteList.add(new AboutUs(
                 1,
-                "Senjuti Biswas",
-                "20161017010",
-                R.drawable.minhaz));
+                "Yahoo Mail",
+                "https://ymail.com",
+                R.drawable.ymail_logo));
 
         siteList.add(new AboutUs(
                 1,
-                "Minhaz Rahman",
-                "20161012010",
-                R.drawable.minhaz));
+                "Facebook",
+                "https://facebook.com",
+                R.drawable.fb_logo));
 
         siteList.add(new AboutUs(
                 1,
-                "Fahmi Farzana",
-                "20161012010",
-                R.drawable.fahmi));
+                "Outlook",
+                "https://live.com",
+                R.drawable.outlook_logo));
 
         siteList.add(new AboutUs(
                 1,
-                "Mahbuba Ani",
-                "20161012010",
-                R.drawable.oni));
+                "Youtube",
+                "https://youtube.com",
+                R.drawable.youtube_logo));
         siteList.add(new AboutUs(
                 1,
-                "Senjuti Biswas",
-                "20161017010",
-                R.drawable.minhaz));
+                "Bikroy.com",
+                "https://bikroy.com",
+                R.drawable.bikroy_logo));
 
-        AdapterForAbout adapter = new AdapterForAbout(getActivity(),siteList);
+        AdapterForAbout adapter = new AdapterForAbout(getActivity(), siteList);
 
         recyclerView.setAdapter(adapter);
 
 
-
-        return  v;
+        return v;
     }
 
 }

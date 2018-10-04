@@ -8,9 +8,9 @@
     <!-- TODO: Update blank fragment layout -->
 
     <WebView
+        android:id="@+id/wb1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/wb1"></WebView>
+        android:layout_height="match_parent"></WebView>
 
 
 </FrameLayout>
