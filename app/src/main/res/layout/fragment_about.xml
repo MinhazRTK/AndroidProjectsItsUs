@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AboutFragment"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
-    android:background="@color/colorPrimary">
+    tools:context=".AboutFragment">
 
 
     <TextView
@@ -24,7 +24,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingBottom="75dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,8 +37,8 @@
                 android:id="@+id/imageView7"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/fahmi"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/fahmi" />
 
             <TextView
                 android:id="@+id/textView"
@@ -52,8 +53,8 @@
                 android:id="@+id/imageView8"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/ani"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ani" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -68,16 +69,16 @@
                 android:id="@+id/imageView9"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/senjuti"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/senjuti" />
             />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Senjuti Biswas\nNorth Western University, Khulna"
                 android:layout_marginBottom="20dp"
+                android:text="Senjuti Biswas\nNorth Western University, Khulna"
                 android:textColor="#000"
                 android:textStyle="bold" />
 
@@ -85,8 +86,8 @@
                 android:id="@+id/imageView10"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/minhaz"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/minhaz" />
 
             <TextView
                 android:id="@+id/textView4"

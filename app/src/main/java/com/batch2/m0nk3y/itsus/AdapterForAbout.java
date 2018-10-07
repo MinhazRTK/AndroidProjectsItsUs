@@ -42,7 +42,6 @@ public class AdapterForAbout extends RecyclerView.Adapter<AdapterForAbout.ViewHo
         final AboutUs AboutUs = memberList.get(position);
 
         holder.textViewName.setText(AboutUs.getName());
-        //holder.textViewId.setText(AboutUs.getUrl());
 
         holder.imageView.setImageDrawable(mCtx.getResources().getDrawable(AboutUs.getImage()));
 
@@ -59,9 +58,9 @@ public class AdapterForAbout extends RecyclerView.Adapter<AdapterForAbout.ViewHo
                         .addToBackStack(null)
                         .replace(R.id.frame, src)
                         .commit();
-
             }
         });
+
 
     }
 
@@ -72,13 +71,12 @@ public class AdapterForAbout extends RecyclerView.Adapter<AdapterForAbout.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textViewName, textViewId;
+        TextView textViewName;
         ImageView imageView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             textViewName = itemView.findViewById(R.id.textViewName);
-            //textViewId = itemView.findViewById(R.id.textViewId);
             imageView = itemView.findViewById(R.id.imageView);
         }
 
