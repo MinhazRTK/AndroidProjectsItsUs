@@ -1,7 +1,5 @@
 package com.batch2.m0nk3y.itsus;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -115,7 +113,7 @@ public class BookmarkFragment extends Fragment {
                 "https://bikroy.com",
                 R.drawable.bikroy_logo));
 
-        AdapterForAbout adapter = new AdapterForAbout(getActivity(), siteList);
+        Adapter adapter = new Adapter(getActivity(), siteList);
 
         recyclerView.setAdapter(adapter);
 

@@ -3,20 +3,16 @@ package com.batch2.m0nk3y.itsus;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
-import java.util.Observable;
 
-public class AdapterForAbout extends RecyclerView.Adapter<AdapterForAbout.ViewHolder> {
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
     private Context mCtx;
@@ -24,7 +20,7 @@ public class AdapterForAbout extends RecyclerView.Adapter<AdapterForAbout.ViewHo
     private List<AboutUs> memberList;
 
 
-    public AdapterForAbout(Context mCtx, List<AboutUs> memberList) {
+    public Adapter(Context mCtx, List<AboutUs> memberList) {
         this.mCtx = mCtx;
         this.memberList = memberList;
     }
